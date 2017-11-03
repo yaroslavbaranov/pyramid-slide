@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+            background-color: #F8F8F8 ;
+        }
+        h1 {
+            background-color: #a22a9e ;
+            font-style: Serif;
+            padding:20px;
+            text-align: center;
+            color: whitesmoke;
+            border-radius: 5px;
+            height: 60px
+        }
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            border: 5px solid lightgray;
+            padding: 5px;
+            background-color: whitesmoke;
+            width:auto;
+            margin:100px;
+            border-radius:5px;
+            margin: 0 auto;
+        }
+       .below {
+            border: 2px solid #a22a9e ;
+            border-radius: 5px;
+            width: 600px;
+            margin: 0 auto;
+        }
+        .input {
+            background-color: lightgray;
+            height: 80px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body >
+
+   <h1>Pyramid Slide</h1>
+    <br>
+    <div class = "below">
+        <div class="input"><br>Brick Symbol:
+            <select id = "symbol" onmouseover="mouseOver()">
+                <option class="bold" name="option" value="#"><b>#</b></option>
+                <option class="bold" name="option" value="@">@</option>
+                <option class="bold" name="option" value="$">$</option>
+                <option class="bold" name="option" value="X">X</option>
+
+           </select>
+            &nbsp; &nbsp; How High?
+            <input id="height" name="height" type="range" min="1" max="20" value=""  autofocus/><span class = "bold" id="heightlabel"></span>
+
+       </div>
+
+       <div id="pyramid"></div>
+    </div>
+
+   <script src="mario.js"></script>
+
+</body>
+</html>
+
+
